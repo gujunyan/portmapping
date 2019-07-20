@@ -17,10 +17,6 @@ type Mapping struct {
 	DstHost string `json:"dsthost"`
 }
 
-type MappingWork struct {
-	MappingItem Mapping
-}
-
 var Conf Config
 var path = flag.String("path", "./", "app path")
 
@@ -37,6 +33,7 @@ func main() {
 		fmt.Println("|      Tcp Port Mapping v1.0         |")
 		fmt.Println("|   Written By Andy Gu in 2019/7/20  |")
 		fmt.Println("|      email:join_gu@sina.com        |")
+		fmt.Println("|   github.com:gujunyan/portmapping  |")
 		fmt.Println("======================================")
 
 		for i := 0; i < len(Conf.Mappings); i++ {
